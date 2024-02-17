@@ -1,16 +1,12 @@
-document.getElementById("gameList");
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("input", function () {
-  const searchTerm = searchInput.value.toLowerCase();
-  const gameCards = gameList.getElementsByClassName("box");
-
-  for (const card of gameCards) {
-    const title = card.querySelector(".title").textContent.toLowerCase();
-    if (title.includes(searchTerm)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  }
-});
+const search = document.getElementById('searchInput');
+const gamelist = document.getElementById('gameList');
+search.addEventListener("input", (event) => {
+const input = search.value.toLowerCase()
+for(const gamebox of gameBoxes) {
+  const title = gamebox.querySelector('.title').innerHTML.toLowerCase();
+  if (title.includes(input)) {
+    gamebox.style.display = "block";
+  } else {
+    gamebox.style.display = "none";
+  };
+}});
