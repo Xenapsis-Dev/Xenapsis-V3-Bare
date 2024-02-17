@@ -16,14 +16,15 @@ text-align: center;
 overflow: hidden;
 }
 
-.title {
-color: var(--accent-color);
+.titlee {
+  color: var(--accent-color);
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
 
 form {
-display: flex;
-justify-content: center;
-align-content: center;
 position: absolute;
 left: 50%;
 top: 50%;
@@ -37,6 +38,7 @@ border-radius: 25px;
 .search-input {
 width: 100%;
 display: block;
+height: 50px;
 border-radius: 20px;
 font-size: 25px;
 border: none;
@@ -48,6 +50,25 @@ padding-block: 0;
 padding-inline: 0;
 text-align: center;
 background: var(--secondary-color);
+}
+
+.proxywrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.favicon {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
 }
 
 
