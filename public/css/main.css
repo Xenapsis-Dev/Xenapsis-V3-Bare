@@ -293,9 +293,20 @@ img {
     overflow: clip;
 }
 
+@keyframes fade-out {
+    from { display: block; height: 150px; width: 250px; }
+    to { height: 150px; width: 250px; opacity: 0; }
+  }
+
+  @keyframes fade-in {
+    from { display: block; height: 150px; width: 250px; opacity: 0; }
+    to { height: 150px; width: 250px; opacity: 1; }
+  }
+
 .box {
     font-family: Lemon;
     background: var(--secondary-color);
+    animation: fade-in 500ms;
     font-size: 15px;
     position: relative;
     color: #fff;
@@ -303,11 +314,19 @@ img {
     height: 150px;
     width: 250px;
     padding: 0px;
+    display: block;
+    opacity: 1;
     transition: all 500ms;
     object-fit: cover;
     border-radius: 5px;
     filter: drop-shadow(0 0 0.01rem black);
+}
 
+
+
+.box-closed {
+    animation: fade-out 500ms;
+    display: none;
 }
 
 .box:hover {

@@ -1,14 +1,15 @@
 {
-	"name": "nodejs-sandbox",
+	"name": "Xenapsis-V3-Bare",
 	"version": "1.0.0",
-	"description": "",
-	"main": "/public/",
+	"description": "Xenapsis with a proxy",
+	"main": "index.js",
 	"scripts": {
 		"start": "node index.js"
 	},
 	"dependencies": {
 		"@tomphttp/bare-server-node": "^2.0.1",
 		"bare-server-node": "^2.0.0",
+		"dependencies": "^0.0.1",
 		"express": "^4.18.2"
 	}
 }
