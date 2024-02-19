@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: Xenapsis
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
