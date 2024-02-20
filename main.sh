@@ -1,2 +1,2 @@
-npm i dependencies
+npm install
 npm start
