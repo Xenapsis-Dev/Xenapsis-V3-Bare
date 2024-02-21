@@ -1,7 +1,8 @@
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
     var icon = document.querySelector("link[rel='icon']");
     var page = window.location.pathname
-    if (page !== "/proxyindex.html" || page !== "yourgameisloading.html") {
+    if (page !== "/proxyindex.html") {
+        if (page !== "/yourgameisloading.html")
         icon.type = "image.png";
         icon.href = localStorage.getItem("favicon");
         var favicon = localStorage.getItem("favicon");
@@ -74,4 +75,4 @@ window.onload = function() {
     }
 
  
- }
+});
