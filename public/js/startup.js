@@ -1,7 +1,7 @@
 window.onload = function() {
     var icon = document.querySelector("link[rel='icon']");
     var page = window.location.pathname
-    if (page !== "/proxyindex.html") {
+    if (page !== "/proxyindex.html" || page !== "yourgameisloading.html") {
         icon.type = "image.png";
         icon.href = localStorage.getItem("favicon");
         var favicon = localStorage.getItem("favicon");
@@ -20,27 +20,29 @@ window.onload = function() {
     console.log(theme)
 
     if (page !== "/proxyindex.html") {
-        if (favicon) {
-            console.log(favicon);
-           } else {
-               icon.href = "/imgs/favicon.png"
-           };
-           if (title) {
-            console.log(title);
-            document.title = title
-           } else {
-               localStorage.setItem("title", "Xenapsis - Grin");
-               document.title = "Xenapsis - Grin"
-           };
-       
-           if (accent) {
-               home.src = "/imgs/navicons/" + accent + "-home.png";
-               games.src = "/imgs/navicons/" + accent + "-games.png";
-               apps.src = "/imgs/navicons/" + accent + "-apps.png";
-               proxy.src = "/imgs/navicons/" + accent + "-proxy.png";
-               blog.src = "/imgs/navicons/" + accent + "-blog.png";
-               settings.src = "/imgs/navicons/" + accent + "-settings.png";
-           };
+        if (page !== "/yourgameisloading.html") {
+            if (favicon) {
+                console.log(favicon);
+            } else {
+                icon.href = "/imgs/favicon.png"
+            };
+            if (title) {
+                console.log(title);
+                document.title = title
+            } else {
+                localStorage.setItem("title", "Xenapsis - Grin");
+                document.title = "Xenapsis - Grin"
+            };
+        
+            if (accent) {
+                home.src = "/imgs/navicons/" + accent + "-home.png";
+                games.src = "/imgs/navicons/" + accent + "-games.png";
+                apps.src = "/imgs/navicons/" + accent + "-apps.png";
+                proxy.src = "/imgs/navicons/" + accent + "-proxy.png";
+                blog.src = "/imgs/navicons/" + accent + "-blog.png";
+                settings.src = "/imgs/navicons/" + accent + "-settings.png";
+            };
+        };
     };
     
     if (accent) {

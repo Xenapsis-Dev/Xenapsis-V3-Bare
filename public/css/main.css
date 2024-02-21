@@ -616,6 +616,13 @@ img {
     color: var(--accent-color);
 }
 
+.loading {
+    font-family: font; 
+    position: relative; 
+    left: 50%;
+    top: 50%;  
+    transform: translate(-50%, -50%);
+}
 
 
 
