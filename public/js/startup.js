@@ -22,6 +22,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (page !== "/proxyindex.html") {
         if (page !== "/yourgameisloading.html") {
+            if (accent) {
+                home.src = "/imgs/navicons/" + accent + "-home.png";
+                games.src = "/imgs/navicons/" + accent + "-games.png";
+                apps.src = "/imgs/navicons/" + accent + "-apps.png";
+                proxy.src = "/imgs/navicons/" + accent + "-proxy.png";
+                blog.src = "/imgs/navicons/" + accent + "-blog.png";
+                settings.src = "/imgs/navicons/" + accent + "-settings.png";
+            } else {
+                home.src = "/imgs/navicons/normal-accent-home";
+                games.src = "/imgs/navicons/normal-accent-games";
+                apps.src = "/imgs/navicons/normal-accent-apps";
+                proxy.src = "/imgs/navicons/normal-accent-proxy";
+                blog.src = "/imgs/navicons/normal-accent-blog";
+                settings.src = "/imgs/navicons/normal-accent-settings";
+                window.location.reload()
+            }
+            
             if (favicon) {
                 console.log(favicon);
             } else {
@@ -33,15 +50,6 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 localStorage.setItem("title", "Xenapsis - Grin");
                 document.title = "Xenapsis - Grin"
-            };
-        
-            if (accent) {
-                home.src = "/imgs/navicons/" + accent + "-home.png";
-                games.src = "/imgs/navicons/" + accent + "-games.png";
-                apps.src = "/imgs/navicons/" + accent + "-apps.png";
-                proxy.src = "/imgs/navicons/" + accent + "-proxy.png";
-                blog.src = "/imgs/navicons/" + accent + "-blog.png";
-                settings.src = "/imgs/navicons/" + accent + "-settings.png";
             };
         };
     };
