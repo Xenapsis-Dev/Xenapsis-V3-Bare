@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
         var games = document.getElementById('games')
         var apps = document.getElementById('apps')
         var proxy = document.getElementById('proxy')
-        var blog = document.getElementById('blog')
         var settings = document.getElementById('settings')
     }
     var accent = localStorage.getItem("accent")
@@ -27,14 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 games.src = "/imgs/navicons/" + accent + "-games.png";
                 apps.src = "/imgs/navicons/" + accent + "-apps.png";
                 proxy.src = "/imgs/navicons/" + accent + "-proxy.png";
-                blog.src = "/imgs/navicons/" + accent + "-blog.png";
                 settings.src = "/imgs/navicons/" + accent + "-settings.png";
             } else {
                 home.src = "/imgs/navicons/normal-accent-home";
                 games.src = "/imgs/navicons/normal-accent-games";
                 apps.src = "/imgs/navicons/normal-accent-apps";
                 proxy.src = "/imgs/navicons/normal-accent-proxy";
-                blog.src = "/imgs/navicons/normal-accent-blog";
                 settings.src = "/imgs/navicons/normal-accent-settings";
                 window.location.reload()
             }

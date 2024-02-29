@@ -83,36 +83,64 @@
 .normal-accent {
     --accent-color: #6A00FF;
     --brighter-accent-color: #e100ff;
+    --bubble-1: #6A00FF;
+    --bubble-1-shadow: #4c00b6;
+    --bubble-2: #e100ff;
+    --bubble-2-shadow: #9f00b4;
 }
 
 .red-accent {
     --accent-color: #ff0000;
     --brighter-accent-color: #ff0000;
+    --bubble-1: #b90000;
+    --bubble-1-shadow: #810000;
+    --bubble-2: #ff0000;
+    --bubble-2-shadow: #b10000;
 }
 
 .blue-accent {
     --accent-color: #0011ff;
     --brighter-accent-color: #0044ff;
+    --bubble-1: #0011ff;
+    --bubble-1-shadow: #000cb4;
+    --bubble-2: #0044ff;
+    --bubble-2-shadow: #002da8;
 }
 
 .yellow-accent {
     --accent-color: #fbff00;
     --brighter-accent-color: #c8ff00;
+    --bubble-1: #fbff00;
+    --bubble-1-shadow: #b3b600;
+    --bubble-2: #c8ff00;
+    --bubble-2-shadow: #8cb300;
 }
 
 .pink-accent {
     --accent-color: #cc00ff;
     --brighter-accent-color: #ff00d4;
+    --bubble-1: #cc00ff;
+    --bubble-1-shadow: #8f00b3;
+    --bubble-2: #ff00d4;
+    --bubble-2-shadow: #ac008f;
 }
 
 .green-accent {
     --accent-color: #33ff00;
     --brighter-accent-color: #00ff40;
+    --bubble-1: #33ff00;
+    --bubble-1-shadow: #23b100;
+    --bubble-2: #00ff40;
+    --bubble-2-shadow: #00af2c;
 }
 
 .black-accent {
     --accent-color: #000000;
     --brighter-accent-color: #313131;
+    --bubble-1: #2c2c2c;
+    --bubble-1-shadow: #1a1a1a;
+    --bubble-2: #313131;
+    --bubble-2-shadow: #131313;
 }
 
 body {
@@ -137,16 +165,23 @@ body {
     text-align: center;
     align-items: center;
     border-radius: 5px;
+    margin: 2px 10px 25px 0;
+    margin-bottom: 0px;
     background: transparent;
+    z-index: 8;
 }
 
 
 .navlogo {
     display: flex;
     align-items: center;
+    justify-content: left;
+    margin-top: 5px;
     font-size: 125%;
-    margin: 0;
     flex-wrap: nowrap;
+    z-index: 7;
+    position:fixed;
+    width: min-content;
 }
 
 .navtext {
@@ -184,8 +219,9 @@ li {
     position: fixed;
     left: 0px;
     top: 0px;
-    margin: 0;
+    margin-top: 0px;
     height: 50px;
+    justify-content: right;
     align-items: center; 
     flex-direction: row;
     flex-wrap:nowrap;
@@ -455,7 +491,11 @@ img {
 .wrapper {
     margin: 50px;
     border: 10px solid var(--secondary-color);
+    color: solid var(--primary-color);
+    position: relative;
     border-radius: 25px;
+    z-index: 3;
+    background-color: var(--primary-color);
 
 }
 .gamewrapper {
@@ -465,7 +505,9 @@ img {
     gap: 1.5rem;
     height: 200px;
     position: relative;
+    color: var(--primary-color);
     align-items: center;
+    z-index: 1;
 }
 
 .gamewrapper2 {
