@@ -146,21 +146,26 @@ document.addEventListener("DOMContentLoaded", function() {
  
 });
 
+const script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.6.3.min.js'; // Check https://jquery.com/ for the current version
+document.getElementsByTagName('head')[0].appendChild(script);
+
+var erudaon = false;
 function consol() {
-    const proxywindow = document.getElementById('frame').contentWindow;
-    const proxydocument = document.getElementById('frame').contentDocument;
-    if (proxywindow.eruda?._isInit) {
-        proxywindow.eruda.destroy();
-    } else {
-        let script = proxydocument.createElement('script')
-        script.src = 'https://cdn.jsdelivr.net/npm/eruda'
-        console.log('asdffasddfas')
-        script.onload = function() {
-            proxywindow.eruda.init()
-            proxywindow.eruda.show()
+    const iframe = $('#frame')[0];
+    const windoww = iframe.contentWindow;
+    const documentt = iframe.contentDocument;
+    if (erudaon === false) {
+        const erudaonscript = documentt.createElement('script');
+        erudaonscript.src = "//cdn.jsdelivr.net/npm/eruda"
+        erudaonscript.onload = function() {
+            windoww.eruda.init();
+            windoww.eruda.show();
         }
-        proxydocument.head.appendChild(script);
+        erudaon = true
+        documentt.getElementsByTagName('head')[0].appendChild(erudaonscript)
+    } else {
+        windoww.eruda.destroy();
+        erudaon = false
     }
 }
-
-// Thank you interstellar for the code
