@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     var accent = localStorage.getItem("accent")
     var theme = localStorage.getItem("theme")
-    console.log(page)
-    console.log(accent)
-    console.log(theme)
+    console.log(page);
+    console.log(accent);
+    console.log(theme);
 
     if (page !== "/proxyindex.html") {
         if (page !== "/yourgameisloading.html") {
@@ -52,32 +52,115 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     
     if (accent) {
-        console.log(accent)
-        console.log(theme)
+        console.log(accent);
+        console.log(theme);
         if (theme) {
-            document.body.removeAttribute('class')
-            document.body.classList.add(accent)
-            document.body.classList.add(theme)
+            document.body.removeAttribute('class');
+            document.body.classList.add(accent);
+            document.body.classList.add(theme);
         } else {
-            document.body.removeAttribute('class')
-            document.body.classList.add(accent)
-            document.body.classList.add('darktheme')
-            localStorage.setItem("theme", "darktheme")
+            document.body.removeAttribute('class');
+            document.body.classList.add(accent);
+            document.body.classList.add('darktheme');
+            localStorage.setItem("theme", "darktheme");
 
         }
     } else {
         if (theme) {
-            document.body.removeAttribute('class')
-            document.body.classList.add('normal-accent')
-            document.body.classList.add(theme)
+            document.body.removeAttribute('class');
+            document.body.classList.add('normal-accent');
+            document.body.classList.add(theme);
         } else {
             document.body.removeAttribute('class')
-            document.body.classList.add('normal-accent')
-            document.body.classList.add("darktheme")
-            localStorage.setItem("theme", "darktheme")
-            localStorage.setItem("accent", "normal-accent")
+            document.body.classList.add('normal-accent');
+            document.body.classList.add("darktheme");
+            localStorage.setItem("theme", "darktheme");
+            localStorage.setItem("accent", "normal-accent");
         }
     }
 
+    setTimeout(function(){
+        console.log(`
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ㅤ
+        ██╗░░██╗███████╗███╗░░██╗░█████╗░██████╗░░██████╗██╗░██████╗
+        ╚██╗██╔╝██╔════╝████╗░██║██╔══██╗██╔══██╗██╔════╝██║██╔════╝
+        ░╚███╔╝░█████╗░░██╔██╗██║███████║██████╔╝╚█████╗░██║╚█████╗░
+        ░██╔██╗░██╔══╝░░██║╚████║██╔══██║██╔═══╝░░╚═══██╗██║░╚═══██╗
+        ██╔╝╚██╗███████╗██║░╚███║██║░░██║██║░░░░░██████╔╝██║██████╔╝
+        ╚═╝░░╚═╝╚══════╝╚═╝░░╚══╝╚═╝░░╚═╝╚═╝░░░░░╚═════╝░╚═╝╚═════╝░
+        🐳 Have fun gaming during school or even work! 🐳
+        (Do not paste anything into here unless you know what it does)`);
+    }, 5000);
+
  
 });
+
+function consol() {
+    const proxywindow = document.getElementById('frame').contentWindow;
+    const proxydocument = document.getElementById('frame').contentDocument;
+    if (proxywindow.eruda?._isInit) {
+        proxywindow.eruda.destroy();
+    } else {
+        let script = proxydocument.createElement('script')
+        script.src = 'https://cdn.jsdelivr.net/npm/eruda'
+        console.log('asdffasddfas')
+        script.onload = function() {
+            proxywindow.eruda.init()
+            proxywindow.eruda.show()
+        }
+        proxydocument.head.appendChild(script);
+    }
+}
+
+// Thank you interstellar for the code

@@ -12,10 +12,6 @@ app.use(express.static('public'));
 const httpServer = http.createServer();
 const bareServer = createBareServer("/bare/");
 
-app.use((req, res) => {
-  res.status(404);
-  res.sendFile(join(publicPath, "404.html"));
-});
 
 httpServer.on("request", (req, res) => {
   if (bareServer.shouldRoute(req)) {
@@ -34,7 +30,7 @@ httpServer.on("request", (req, res) => {
 
 httpServer.on("listening", () => {
   console.log("HTTP server listening");
-  console.log("View your server at localhost:2100")
+  console.log("View your server at http://localhost:2100")
 });
 
 httpServer.listen({
