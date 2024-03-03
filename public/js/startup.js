@@ -142,10 +142,6 @@ document.addEventListener("DOMContentLoaded", function() {
         🐳 Have fun gaming during school or even work! 🐳
         (Do not paste anything into here unless you know what it does)`);
     }, 5000);
-    let script = document.createElement('script');
-    script.src = "https://arc.io/widget.min.js#EuXmrNP6"
-    document.getElementsByTagName('head')[0].appendChild(script);
-    script.async = true
  
 });
 
