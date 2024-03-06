@@ -411,6 +411,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 100px;
  }
 
  .search {
@@ -667,7 +668,7 @@ img {
 }
 
 .xenapsis {
-    font: 200px;
+    font-size: 100px;
 }
 
 
