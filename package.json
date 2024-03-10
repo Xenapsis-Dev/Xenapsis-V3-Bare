@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Xenapsis with a proxy",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"start": "node index.js"
 	},
