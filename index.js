@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-const publicPath = fileURLToPath(new URL("/public/", import.meta.url));
+const publicPath = fileURLToPath(new URL("public", import.meta.url));
 
 // Create an HTTP server
 const httpServer = http.createServer();
