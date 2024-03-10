@@ -12,6 +12,11 @@ app.use(express.static('public'));
 const httpServer = http.createServer();
 const bareServer = createBareServer("/bare/");
 
+app.use((req, res) => {
+  res.status(404);
+  res.sendFile(join(publicPath, "404.html"));
+});
+
 
 httpServer.on("request", (req, res) => {
   if (bareServer.shouldRoute(req)) {

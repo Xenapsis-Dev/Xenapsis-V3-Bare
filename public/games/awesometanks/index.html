@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJSP7W1G8V"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LJSP7W1G8V');
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/conc.css">
+        <link rel="icon" type="image.png" href="/imgs/navicons/favicon.png">
+        <script src="/js/startup.js"></script>
+        <script src="/js/aboutblank.js"></script>
+        <script src="/js/desccon.js"></script>
+    </head>
+    <body style="overflow-y: hidden;">
+        <nav id="navbar">
+            <script src="/js/navbar.js"></script>
+        </nav>
+        <br>
+        <br>
+        <div class="gameholder">
+            <iframe class="frame" id="frame" src="/yourgameisloading.html"></iframe>
+            <div class="gamebarwrapper">
+                <p1 class="gamename" style="position: absolute;">ㅤAwesome Tanks</p1>
+                <ul class="gamebar">
+                    <li style="height: 25px;"><img onclick="showdesc()" class="fullscreen" id="descbutton" style="cursor: pointer;" src="/imgs/description.png"></li><p1>ㅤ</p1>
+                    <li style="height: 25px;"><img onclick="showcon()" class="fullscreen" id="conbutton" style="cursor: pointer;" src="/imgs/Controls.png"></li><p1>ㅤ</p1>
+                    <li style="height: 25px;"><img onclick="consol()" class="fullscreen" id="conbutton" style="cursor: pointer;" src="/imgs/console.png"></li><p1>ㅤ</p1>
+                    <li style="height: 25px;"><img class="fullscreen" style="cursor: pointer;" onclick="document.getElementById('frame').requestFullscreen()" class="fullscreen" src="/imgs/Fullscreen.png"></li><p1>ㅤ</p1>
+                </ul>
+
+            </div>
+        </div>
+        <div draggable="true" class="descholder" id="descholder">
+            <div class="desc" id="desc">
+                ㅤAwesome Tanks 1 is a thrilling tank combat game with dynamic levels and intense battles, offering strategic upgrades and adrenaline-pumping action.
+            </div>
+            <div draggable="true" class="controlls" id="controlls">
+                ㅤMovement: <img class="wasd" style="cursor: pointer;" src="/imgs/controlcons/Arrows.png"> <br>
+                ㅤSwitch Guns: 1 - 7
+            </div>
+        </div>
+        </div>
+        <script>
+            setTimeout(function(){
+                console.log("Executed after 1 second");
+                var iframe = document.getElementById('frame');
+                iframe.src = 'game.html';
+            }, 1000);
+            </script>
+    </body>
+</html>
