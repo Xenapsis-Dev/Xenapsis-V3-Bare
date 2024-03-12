@@ -28,10 +28,10 @@
 
 .bubbles span {
     position: relative;
-    width: 20px;
-    height: 15px;
+    width: 100px;
+    height: 20px;
     background-color: var(--bubble-1);
-    margin: 0 .5%;
+    margin: 0 0.5%;
     border-radius: 50%;
     box-shadow: 0 0 0 5px var(--bubble-1-shadow),
     0 0 25px var(--bubble-1),

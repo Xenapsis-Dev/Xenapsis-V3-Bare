@@ -219,15 +219,30 @@ li {
     position: fixed;
     left: 0px;
     top: 0px;
+    gap: 1%;
     margin-top: 0px;
     height: 50px;
-    justify-content: right;
+    justify-content: center;
     align-items: center; 
     flex-direction: row;
     flex-wrap:nowrap;
     filter: drop-shadow(0 0 0.5rem black);
     z-index: 6;
 }
+
+.github {
+    display: flex;
+    justify-self: right;
+    font-family: font;
+    font-size: 20px;
+    color: #fff;
+    transition-duration: 500ms;
+}
+
+.github:hover {
+    color: var(--accent-color);
+}
+
 
 .navimg {
     width: 15px;

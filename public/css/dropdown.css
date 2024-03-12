@@ -15,7 +15,6 @@
     min-width: 15em;
     position: relative;
     margin: 2em;
-    z-index: 3;
     font-family: font;
 }
 
@@ -24,7 +23,7 @@
 }
 
 .dropdown2 {
-    z-index: 2;
+    z-index: 5;
 }
 
 .dropdown * {
