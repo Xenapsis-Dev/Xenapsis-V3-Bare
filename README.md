@@ -7,9 +7,7 @@ If you dont like the normal boring xenapsis theme you can always choose from man
 
 <h1>Xenapsis Proxy</h1>
 
-The Powerful yet lightweight proxy allows you to host xenapsis even on a static website, by using a deployable version of bare server we can put the server on a dynamic free hosting website like vercel.
-
-Just type in anything and you get it, for more info read the <a href="https://github.com/Xenapsis-dev/Xenapsis-V3-Proxy">offical xenapsis proxy</a>
+The Powerful yet lightweight proxy allows you to go to any website you would like to. During school or work you can view websites like youtube, now.gg, geforce now, poki, crazy games, insagram and tiktok <a href="https://github.com/Xenapsis-dev/Xenapsis-V3-Proxy">offical xenapsis proxy.</a>
 
 <h1>Deploying Xenapsis</h1>
 
