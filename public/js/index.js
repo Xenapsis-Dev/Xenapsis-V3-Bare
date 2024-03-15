@@ -14,14 +14,6 @@ form.addEventListener('submit', async event => {
 
 
         window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
-        window.location.reload();
-        console.log('reload')
-        setTimeout(function(){
-            console.log("Executed after 1 second");
-            var iframe = document.getElementById('frame');
-            iframe.src = 'game.html';
-        }, 500);
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
     });
 });
 
