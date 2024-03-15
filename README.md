@@ -9,7 +9,7 @@ If you dont like the normal boring xenapsis theme you can always choose from man
 
 The Powerful yet lightweight proxy allows you to host xenapsis even on a static website, by using a deployable version of bare server we can put the server on a dynamic free hosting website like vercel.
 
-Just type in anything and you get it, for more info read the <a href="https://github.com/xenapsis/staticproxy">offical xenapsis proxy</a>
+Just type in anything and you get it, for more info read the <a href="https://github.com/Xenapsis-dev/Xenapsis-V3-Proxy">offical xenapsis proxy</a>
 
 <h1>Deploying Xenapsis</h1>
 
