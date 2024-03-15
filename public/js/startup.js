@@ -22,37 +22,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (page !== "/proxyindex.html") {
         if (page !== "/yourgameisloading.html") {
-            if (page !== "/proxy.html") {
-                if (accent) {
-                    home.src = "/imgs/navicons/" + accent + "-home.png";
-                    games.src = "/imgs/navicons/" + accent + "-games.png";
-                    apps.src = "/imgs/navicons/" + accent + "-apps.png";
-                    proxy.src = "/imgs/navicons/" + accent + "-proxy.png";
-                    settings.src = "/imgs/navicons/" + accent + "-settings.png";
-                } else {
-                    home.src = "/imgs/navicons/normal-accent-home";
-                    games.src = "/imgs/navicons/normal-accent-games";
-                    apps.src = "/imgs/navicons/normal-accent-apps";
-                    proxy.src = "/imgs/navicons/normal-accent-proxy";
-                    settings.src = "/imgs/navicons/normal-accent-settings";
-                    window.location.reload()
-                    console.log("First Time User!")
-                    registerSW();
-                    console.log("Registered SW for UV")
-                }
+            if (accent) {
+                home.src = "/imgs/navicons/" + accent + "-home.png";
+                games.src = "/imgs/navicons/" + accent + "-games.png";
+                apps.src = "/imgs/navicons/" + accent + "-apps.png";
+                proxy.src = "/imgs/navicons/" + accent + "-proxy.png";
+                settings.src = "/imgs/navicons/" + accent + "-settings.png";
+            } else {
+                home.src = "/imgs/navicons/normal-accent-home";
+                games.src = "/imgs/navicons/normal-accent-games";
+                apps.src = "/imgs/navicons/normal-accent-apps";
+                proxy.src = "/imgs/navicons/normal-accent-proxy";
+                settings.src = "/imgs/navicons/normal-accent-settings";
+                window.location.reload()
+                console.log("First Time User!")
+                registerSW();
+                console.log("Registered SW for UV")
+            }
                 
-                if (favicon) {
-                    console.log(favicon);
-                } else {
-                    icon.href = "/imgs/favicon.png"
-                };
-                if (title) {
-                    console.log(title);
-                    document.title = title
-                } else {
-                    localStorage.setItem("title", "Xenapsis - Grin");
-                    document.title = "Xenapsis - Grin"
-                };
+            if (favicon) {
+                console.log(favicon);
+            } else {
+                icon.href = "/imgs/favicon.png"
+            };
+            if (title) {
+                console.log(title);
+                document.title = title
+            } else {
+                localStorage.setItem("title", "Xenapsis - Grin");
+                document.title = "Xenapsis - Grin"
             };
         };
     };
