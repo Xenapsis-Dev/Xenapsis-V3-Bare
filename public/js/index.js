@@ -1,8 +1,10 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
 
+
 form.addEventListener('submit', async event => {
     event.preventDefault();
+    
     window.navigator.serviceWorker.register('./sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
@@ -11,6 +13,14 @@ form.addEventListener('submit', async event => {
         else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
 
 
+        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+        window.location.reload();
+        console.log('reload')
+        setTimeout(function(){
+            console.log("Executed after 1 second");
+            var iframe = document.getElementById('frame');
+            iframe.src = 'game.html';
+        }, 500);
         window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
     });
 });
