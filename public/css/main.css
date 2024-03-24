@@ -20,6 +20,10 @@
 
 }
 
+html {
+    font-size: 100%;
+}
+
 :root {
     --primary-color: rgb(70, 70, 70);
     --secondary-color: rgb(54, 54, 54);
@@ -157,11 +161,10 @@ body {
 .navbutton {
     margin: 5px;
     padding: 0;
-    width: 10%;
+    width: 11%;
     height: 25px;
     border: 2px solid var(--accent-color);
     display: flex;
-    flex-wrap: nowrap;
     text-align: center;
     align-items: center;
     border-radius: 5px;
@@ -185,11 +188,11 @@ body {
 }
 
 .navtext {
-    width: 10%;
-    height: 20px;
     font-family: Lemon;
     color: var(--accent-color);
+    display:inline-block;
     transition-duration: 500ms;
+    font-size: 100%;
     
 }
 
@@ -199,16 +202,21 @@ body {
     font-family: Lemon;
     color: var(--accent-color);
     transition-duration: 500ms;
-    
+    display: flex;
+    align-self: center;
+    margin-bottom: 8px; 
+    font-size: 100%;
 }
 
 li {
+    display:flex;
     list-style: none;
+    width: 100%;
 }
 
 .navimgg {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .navbar {
@@ -222,7 +230,7 @@ li {
     gap: 1%;
     margin-top: 0px;
     height: 50px;
-    justify-content: center;
+    justify-content: end;
     align-items: center; 
     flex-direction: row;
     flex-wrap:nowrap;
@@ -233,26 +241,41 @@ li {
 .github {
     display: flex;
     justify-self: right;
+    align-self: end;
+    font-family: font;
+    margin-bottom: 7px;
+    font-size: 20px;
+    color: var(--accent-color);
+    transition-duration: 500ms;
+}
+
+.settingsimg {
+    display: flex;
+    justify-self: right;
+    align-self: center;
     font-family: font;
     font-size: 20px;
-    color: #fff;
+    color: var(--accent-color);
     transition-duration: 500ms;
 }
 
 .github:hover {
-    color: var(--accent-color);
+    color: #fff;
 }
 
 
 .navimg {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
 }
 
 .navbutton {
     transition-duration: 500ms;
-    width: 10%;
-    height: 20px;
+    width: 140px;
+    height: 50%;
     font-family: Lemon;
     color: var(--accent-color);
     transition-duration: 500ms;
@@ -683,6 +706,9 @@ img {
     font-size: 100px;
 }
 
+.settings:hover {
+    filter: brightness(0) invert(1);
+}
 
 
 
