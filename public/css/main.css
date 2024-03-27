@@ -209,9 +209,13 @@ body {
 }
 
 li {
+    list-style: none;
+}
+
+.navbarli {
     display:flex;
     list-style: none;
-    width: 100%;
+    width: 100%;  
 }
 
 .navimgg {
