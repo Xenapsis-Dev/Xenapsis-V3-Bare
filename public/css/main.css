@@ -25,39 +25,44 @@ html {
 }
 
 :root {
-    --primary-color: rgb(70, 70, 70);
-    --secondary-color: rgb(54, 54, 54);
-    --accent-color: rgb(54, 54, 54);
+    --primary-color: rgb(71, 71, 71);
+    --secondary-color: rgb(20, 20, 20);
+    --accent-color: rgb(39, 39, 39);
     --offset-color: rgb(180, 180, 180);
 }
 
 .dark-theme {
-    --primary-color: rgb(70, 70, 70);
-    --secondary-color: rgb(54, 54, 54);
+    --primary-color: rgb(65, 65, 65);
+    --secondary-color: rgb(36, 36, 36);
+    --lighter-color: rgb(48, 48, 48);
     --offset-color: rgb(180, 180, 180);
 }
 
 .light-theme {
     --primary-color: rgb(207, 205, 205);
     --secondary-color: rgb(216, 216, 216);
+    --lighter-color: rgb(236, 236, 236);
     --offset-color: #6e6d6d;
 }
 
 .Moon-theme {
-    --primary-color: rgb(22, 22, 22);
-    --secondary-color: rgb(139, 139, 139);
+    --primary-color: rgb(63, 63, 63);
+    --secondary-color: rgb(99, 99, 99);
+    --lighter-color: rgb(202, 202, 202);
     --offset-color: rgb(255, 255, 255);
 }
 
 .mariana-theme {
     --primary-color: rgb(24, 24, 24);
     --secondary-color: rgb(19, 19, 19);
+    --lighter-color: rgb(59, 59, 59);
     --offset-color: rgb(255, 255, 255);
 }
 
 .ocean-theme {
-    --primary-color: rgb(0, 68, 255);
+    --primary-color: rgb(137, 188, 255);
     --secondary-color: rgb(0, 110, 255);
+    --lighter-color: rgb(97, 165, 255);
     --offset-color: rgb(255, 255, 255);
 }
 
@@ -156,7 +161,7 @@ body {
 }
 
 body {
-    background-color: var(--primary-color);
+    background-image: radial-gradient(var(--lighter-color), var(--secondary-color));
 }
 .navbutton {
     margin: 5px;
@@ -303,16 +308,16 @@ li {
 }
 
 .welcome {
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    width: 60%;
+    align-self: flex-start;
     align-items: center;
     justify-content: center;
+    margin-left: 35px;
+    margin-top: 10%;
     font-family: Lemon;
 
 }
@@ -713,6 +718,64 @@ img {
 .settings:hover {
     filter: brightness(0) invert(1);
 }
+
+.unrescricteddiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 75%;
+}
+
+.unrescricted {
+    width: 100%;
+    font-family: font;
+    color: var(--accent-color);
+    font-size: 75px;
+    margin-left: 20px;
+}
+
+.proxytext {
+    font-family: font;
+    color: var(--primary-color);
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.trailer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.glow {
+    filter: drop-shadow(0 0 1rem var(--accent-color));
+}
+
+@media (max-height: 800px) {
+    .welcome {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        align-self: flex-start;
+        align-items: center;
+        justify-content: center;
+        margin-left: 35px;
+        margin-top: 3%;
+        font-family: Lemon;
+    
+    }
+}
+
 
 
 
