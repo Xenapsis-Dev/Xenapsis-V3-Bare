@@ -25,12 +25,12 @@ html {
 }
 
 :root {
-    --primary-color: rgb(71, 71, 71);
-    --secondary-color: rgb(44, 44, 44);
     --accent-color: rgb(39, 39, 39);
+    --primary-color: rgb(65, 65, 65);
+    --secondary-color: rgb(36, 36, 36);
+    --lighter-color: rgb(65, 65, 65);
     --offset-color: rgb(180, 180, 180);
     --darker-color: rgb(22, 22, 22);
-}
 
 .dark-theme {
     --primary-color: rgb(65, 65, 65);
