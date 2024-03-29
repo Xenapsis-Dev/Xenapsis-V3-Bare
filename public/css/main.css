@@ -26,23 +26,26 @@ html {
 
 :root {
     --primary-color: rgb(71, 71, 71);
-    --secondary-color: rgb(20, 20, 20);
+    --secondary-color: rgb(44, 44, 44);
     --accent-color: rgb(39, 39, 39);
     --offset-color: rgb(180, 180, 180);
+    --darker-color: rgb(22, 22, 22);
 }
 
 .dark-theme {
     --primary-color: rgb(65, 65, 65);
     --secondary-color: rgb(36, 36, 36);
-    --lighter-color: rgb(48, 48, 48);
+    --lighter-color: rgb(65, 65, 65);
     --offset-color: rgb(180, 180, 180);
+    --darker-color: rgb(22, 22, 22);
 }
-
+ 
 .light-theme {
     --primary-color: rgb(207, 205, 205);
     --secondary-color: rgb(216, 216, 216);
     --lighter-color: rgb(236, 236, 236);
     --offset-color: #6e6d6d;
+    --darker-color: rgb(85, 85, 85);
 }
 
 .Moon-theme {
@@ -50,6 +53,7 @@ html {
     --secondary-color: rgb(99, 99, 99);
     --lighter-color: rgb(202, 202, 202);
     --offset-color: rgb(255, 255, 255);
+    --darker-color: rgb(107, 107, 107);
 }
 
 .mariana-theme {
@@ -57,6 +61,7 @@ html {
     --secondary-color: rgb(19, 19, 19);
     --lighter-color: rgb(59, 59, 59);
     --offset-color: rgb(255, 255, 255);
+    --darker-color: rgb(12, 12, 12);
 }
 
 .ocean-theme {
@@ -64,6 +69,7 @@ html {
     --secondary-color: rgb(0, 110, 255);
     --lighter-color: rgb(97, 165, 255);
     --offset-color: rgb(255, 255, 255);
+    --darker-color: rgb(26, 67, 119);
 }
 
 ::-webkit-scrollbar {
@@ -318,7 +324,7 @@ li {
     justify-content: center;
     margin-left: 35px;
     margin-top: 10%;
-    font-family: Lemon;
+    font-family: font;
 
 }
 
@@ -539,7 +545,7 @@ img {
     color: solid var(--primary-color);
     position: relative;
     border-radius: 25px;
-    z-index: 3;
+    z-index: 2;
     background-color: var(--primary-color);
 
 }
@@ -737,7 +743,7 @@ img {
 
 .proxytext {
     font-family: font;
-    color: var(--primary-color);
+    color: var(--darker-color);
     font-size: 25px;
     margin-left: 20px;
     margin-top: 10px;
