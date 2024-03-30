@@ -32,6 +32,7 @@ html {
     --offset-color: rgb(180, 180, 180);
     --darker-color: rgb(22, 22, 22);
 
+}
 .dark-theme {
     --primary-color: rgb(65, 65, 65);
     --secondary-color: rgb(36, 36, 36);
@@ -574,7 +575,7 @@ img {
 .viewall {
     margin: 5px;
     padding: 0;
-    width: 10%;
+    width: 200px;
     height: 25px;
     font-size: 75%;
     border: 2px solid var(--accent-color);
@@ -593,6 +594,8 @@ img {
     font-family: montserrat, sans-serif;
     color: var(--accent-color);
     transition: 500ms;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .viewall:hover {
