@@ -329,6 +329,11 @@ li {
 
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .welcometext {
     color: var(--accent-color);
     font-size: 40px;

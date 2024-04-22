@@ -6,7 +6,7 @@ var nav = `
     <a class="navbutton" href="/apps.html"><li class="navbarli"> <img id="apps" class="navimg" src=""><p1>ㅤ</p1><p1> apps</p1></li></a>
     <a class="navbutton" href="/proxy.html"><li class="navbarli" > <img id="proxy" class="navimg" src=""><p1>ㅤ</p1><p1 class="navtext"> Proxy</p1></li></a>
     <a class="settingsimg" href="/settings.html"><li class="navbarli"> <img id="settings" class="navimg settings" src=""></li></a>
-    <a class="github" href="https://github.com/Xenapsis-dev/Xenapsis-V3-Bare"><li class="navbarli"><p1>ㅤ</p1> Github</li></a>
+    <a class="github" href="/social.html"><li class="navbarli"><p1>ㅤ</p1> Github/Discord</li></a>
 </ul>`
 
 document.querySelector("#navbar").insertAdjacentHTML("afterbegin", nav);
