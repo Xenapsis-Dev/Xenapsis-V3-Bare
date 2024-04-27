@@ -1,3 +1,8 @@
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var icon = document.querySelector("link[rel='icon']");
     var page = window.location.pathname
@@ -12,6 +17,12 @@ document.addEventListener("DOMContentLoaded", function() {
             var apps = document.getElementById('apps')
             var proxy = document.getElementById('proxy')
             var settings = document.getElementById('settings')
+            let time = document.getElementById("time");
+
+            setInterval(() => {
+                let d = new Date();
+                time.innerHTML = d.toLocaleTimeString();
+            }, 1000);
         }
     }
     var accent = localStorage.getItem("accent")
