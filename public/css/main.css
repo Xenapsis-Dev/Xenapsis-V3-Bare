@@ -345,6 +345,7 @@ nav {
 .navbutton:hover {
     background-color: var(--accent-color);
     color: white;
+    
 }
 
 .navtext:hover {
@@ -356,7 +357,7 @@ nav {
 }
 
 .navbutton:hover .navimg {
-    filter:invert(30%)
+    filter: brightness(0) invert(1);
 }
 
 .welcome {
@@ -457,7 +458,7 @@ img {
     display: block;
     opacity: 1;
     transition: all 500ms;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 5px;
     filter: drop-shadow(0 0 0.01rem black);
 }
@@ -580,14 +581,15 @@ img {
 
 .fullscreen {
     width: auto;
-    margin: 0;
     padding: 0;
     height: auto;
+    margin-right: 30px;
     max-width: 25px;
 }
 
 .gamebar .gamename {
     justify-content: flex-start;
+    margin-left: 15px;
 }
 
 .wrapper {
@@ -694,7 +696,7 @@ img {
 
 .fullscreen {
     width: auto;
-    margin: 0;
+    margin-right: 15px;
     padding: 0;
     height: auto;
     max-width: 25px;
@@ -752,10 +754,11 @@ img {
 .gamename {
     font-family: Lemon;
     color: var(--accent-color);
+    margin-left: 15px;
 }
 
 .gameimg {
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 
 .viewall {
