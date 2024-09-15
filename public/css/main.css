@@ -25,20 +25,21 @@ html {
 }
 
 :root {
-    --accent-color: rgb(39, 39, 39);
-    --primary-color: rgb(65, 65, 65);
-    --secondary-color: rgb(36, 36, 36);
-    --lighter-color: rgb(65, 65, 65);
+    --primary-color: rgb(39, 39, 39);
+    --secondary-color: rgb(19, 19, 19);
+    --lighter-color: rgb(37, 37, 37);
     --offset-color: rgb(180, 180, 180);
-    --darker-color: rgb(22, 22, 22);
+    --darker-color: rgb(37, 37, 37);
+    --text-color: rgb(82, 82, 82);
 
 }
 .dark-theme {
-    --primary-color: rgb(65, 65, 65);
-    --secondary-color: rgb(36, 36, 36);
-    --lighter-color: rgb(65, 65, 65);
+    --primary-color: rgb(39, 39, 39);
+    --secondary-color: rgb(19, 19, 19);
+    --lighter-color: rgb(37, 37, 37);
     --offset-color: rgb(180, 180, 180);
-    --darker-color: rgb(22, 22, 22);
+    --darker-color: rgb(37, 37, 37);
+    --text-color: rgb(82, 82, 82);
 }
  
 .light-theme {
@@ -47,6 +48,7 @@ html {
     --lighter-color: rgb(236, 236, 236);
     --offset-color: #6e6d6d;
     --darker-color: rgb(85, 85, 85);
+    --text-color: rgb(156, 155, 155);
 }
 
 .Moon-theme {
@@ -58,11 +60,11 @@ html {
 }
 
 .mariana-theme {
-    --primary-color: rgb(24, 24, 24);
-    --secondary-color: rgb(19, 19, 19);
-    --lighter-color: rgb(59, 59, 59);
+    --primary-color: rgb(15, 15, 15);
+    --secondary-color: rgb(7, 7, 7);
+    --lighter-color: rgb(15, 15, 15);
     --offset-color: rgb(255, 255, 255);
-    --darker-color: rgb(12, 12, 12);
+    --darker-color: rgb(0, 0, 0);
 }
 
 .ocean-theme {
@@ -71,6 +73,7 @@ html {
     --lighter-color: rgb(97, 165, 255);
     --offset-color: rgb(255, 255, 255);
     --darker-color: rgb(26, 67, 119);
+    --text-color: rgb(89, 194, 255);
 }
 
 ::-webkit-scrollbar {
@@ -161,7 +164,9 @@ html {
 
 body {
     height: 100vh;
+    
 }
+
 
 .pink-accent {
     --accent-color: #ff00ff;
@@ -371,6 +376,7 @@ nav {
     justify-content: center;
     margin-left: 35px;
     margin-top: 10%;
+    gap: 25px;
     font-family: font;
 
 }
@@ -432,6 +438,7 @@ img {
     width: 100%;
     height: 100%;
     overflow: clip;
+    filter: saturate(150%);
 }
 
 @keyframes fade-out {
@@ -799,7 +806,7 @@ img {
 
 .proxytext {
     font-family: nexa;
-    color: var(--darker-color);
+    color: var(--text-color);
     font-size: 25px;
     margin-left: 20px;
     margin-top: 10px;

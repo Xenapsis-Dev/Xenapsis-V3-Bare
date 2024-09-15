@@ -12,6 +12,7 @@
     z-index: -100;
     width: 100%;
     height: 100%;
+    filter: saturate(150%);
 }
 
 @keyframes animate 
