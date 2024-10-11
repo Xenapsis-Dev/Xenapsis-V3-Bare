@@ -31,6 +31,7 @@ html {
     --offset-color: rgb(180, 180, 180);
     --darker-color: rgb(37, 37, 37);
     --text-color: rgb(82, 82, 82);
+    --text-shadow: rgb(24, 24, 24);
 
 }
 .dark-theme {
@@ -40,6 +41,7 @@ html {
     --offset-color: rgb(180, 180, 180);
     --darker-color: rgb(37, 37, 37);
     --text-color: rgb(82, 82, 82);
+    --text-shadow: rgb(24, 24, 24);
 }
  
 .light-theme {
@@ -49,6 +51,7 @@ html {
     --offset-color: #6e6d6d;
     --darker-color: rgb(85, 85, 85);
     --text-color: rgb(156, 155, 155);
+    --text-shadow: rgb(167, 167, 167);
 }
 
 .Moon-theme {
@@ -57,6 +60,7 @@ html {
     --lighter-color: rgb(202, 202, 202);
     --offset-color: rgb(255, 255, 255);
     --darker-color: rgb(107, 107, 107);
+    --text-shadow: rgb(54, 54, 54);
 }
 
 .mariana-theme {
@@ -65,6 +69,7 @@ html {
     --lighter-color: rgb(15, 15, 15);
     --offset-color: rgb(255, 255, 255);
     --darker-color: rgb(0, 0, 0);
+    --text-shadow: rgb(24, 24, 24);
 }
 
 .ocean-theme {
@@ -107,6 +112,8 @@ html {
     --bubble-2: #e100ff;
     --bubble-2-shadow: #9f00b4;
 }
+
+
 
 .red-accent {
     --accent-color: #ff0000;
@@ -164,6 +171,7 @@ html {
 
 body {
     height: 100vh;
+
     
 }
 
@@ -173,7 +181,15 @@ body {
 }
 
 body {
-    background-image: radial-gradient(var(--lighter-color), var(--secondary-color));
+    background-color: var(--primary-color);
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
+      linear-gradient(to bottom, #80808012 1px, transparent 1px);
+    background-size: 30px 30px;
+    z-index: -2;
 }
 .navbutton {
     margin: 5px;
@@ -802,6 +818,7 @@ img {
     color: var(--accent-color);
     font-size: 75px;
     margin-left: 20px;
+    text-shadow: 5px 5px 0px var(--text-shadow);
 }
 
 .proxytext {
@@ -814,6 +831,7 @@ img {
 
 .trailer {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 25px;
 }
@@ -825,7 +843,9 @@ img {
 }
 
 .glow {
-    filter: drop-shadow(0 0 1rem var(--accent-color));
+    -webkit-box-shadow:0px 0px 116px 0px var(--accent-color);
+-moz-box-shadow: 0px 0px 116px 0px var(--accent-color);
+box-shadow: 0px 0px 50px 0px var(--accent-color);
 }
 
 video {
