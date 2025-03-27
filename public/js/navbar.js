@@ -14,4 +14,8 @@ var nav = `
     <h1 id="time" class="time">Local Time :)</h1>
 </div>`
 
+let footer = `<footer style=" position: relative; width: 100%; height: 25px; margin-top: -25px; background-color: var(--accent-color);"><div style="text-align: center; position: relative; width: 100%; height: 25px; color: white; font-family: nexa;">"I HATE WINDOWS TERMINAL I WANT BASH!!" - Finn</div></footer>`
 document.querySelector("#navbar").insertAdjacentHTML("afterbegin", nav);
+document.addEventListener("DOMContentLoaded", function() { 
+     document.querySelector("body").insertAdjacentHTML("beforeend", footer);
+})
